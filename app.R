@@ -1,5 +1,8 @@
 library(analyzeRiksdag)
 
+print("Checking for updates... please wait.")
+get_Riksdag()
+
 ui <- fluidPage(
   titlePanel("Swedish voting"),
   
