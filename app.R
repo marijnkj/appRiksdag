@@ -2,9 +2,11 @@ devtools::install_github("https://github.com/marijnkj/analyzeRiksdag.git")
 library(analyzeRiksdag)
 library(shiny)
 library(plotly)
-#print("Checking for updates... please wait.")
+
+# Run the app as a function
 
 run_riksdagsApp <- function(){
+  # Giving the option to update data
   get_Riksdag()
   
   ui <- fluidPage(
